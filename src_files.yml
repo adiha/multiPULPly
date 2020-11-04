@@ -1,0 +1,21 @@
+hw-dot-product:
+  incdirs : [
+    rtl
+  ]
+  files : [
+    rtl/dot_product_bit.sv,
+    rtl/dot_product.sv,
+    rtl/dp_pooling.sv,
+    rtl/dp_package.sv,
+    rtl/dp_fsm.sv,
+    rtl/dp_ctrl.sv,
+    rtl/dp_streamer.sv,
+    rtl/dp_engine.sv,
+    rtl/dp_top.sv,
+    rtl/dp_result_adder.sv,
+    wrap/dp_top_wrap.sv
+  ]
+  vlog_opts : [
+    "-L hwpe_ctrl_lib",
+    "-L hwpe_stream_lib"
+  ]
